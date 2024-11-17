@@ -1,0 +1,210 @@
+// splice method //
+
+
+// let arr =[1,2,3,4,5,6,7,8,9];
+// let newArr = arr.slice(2);
+// console.log(newArr);
+
+// splice method //
+
+
+// let arr =[1,2,3,4,5,6,7,8,9];
+
+// let newArr = arr.splice(2,5,"fjsnsh","judnij");
+// console.log(newArr);
+// console.log(arr);
+
+
+
+
+// let arr =[1,2,3,4];
+// let newArr = arr.splice(1,2,'x','y')
+// console.log(newArr);
+// console.log(arr);
+
+
+// let arr =[1,2,3,4,5];
+// let newArr = arr.splice(3,1,33);
+// console.log(newArr);
+// console.log(arr);
+
+// let arr = [1,2,3,4,56,78,8,9]
+
+// let sumOfArr = arr.reduce((acc,val,index,arr)=>{
+//     return acc + val
+// })
+// console.log(sumOfArr);
+
+
+// let arSortingArrr = [1,2,3,4,56,78,8,9];
+// arSortingArrr.sort((a,b)=>{
+//     return b-a
+// })
+// console.log(arSortingArrr);
+
+
+// odd even values //
+
+// let filterArr =[1,2,3,4,56,78,8,9];
+// let evenVal = filterArr.filter((val)=>val%2 === 0 )
+// console.log(evenVal);
+
+// finder the greater value then then 30 //
+
+// let filterArr =[1,2,3,4,56,78,8,9];
+// let evenVal = filterArr.filter((val)=>val >30).map((val)=>val*2).reduce((val,acc)=>val+=acc)
+// console.log(evenVal);
+
+// let finderArr =[12,34,32,53,43,2];
+// console.log( finderArr.find((val,ind)=>val===53));
+
+
+
+// let num=5
+// function pattern(num){
+//     for (let i=1;i<=num;i++){
+//         let row=""
+//         for(let j=1;j<=num;j++){
+//             if(j==i||j==num-i+1){
+//                 row+="*"
+
+//             }
+//             else{
+//                 row+=" "
+//             }
+//         }
+//         console.log(row);
+
+//     }
+// }
+// pattern(num)
+
+// croose pattern //
+
+// let num = 5;
+// function pattern(num) {
+//     for (let i = 1; i <= num; i++) {
+//         let row = ""
+//         for (let j = 1; j <= num; j++) {
+//             if (j == i || j == num - i + 1) {
+//                 row += "*"
+//             }
+//             else {
+//                 row += " "
+//             }
+//         }
+//         console.log(row);
+//     }
+
+
+// }
+// pattern(num)
+
+
+// let num=5;
+// function pattern(num){
+//     for(let i=1;i<=num;i++){
+//         let row=""
+//         for(let j=i;j<=num;j++){
+//             row+=" "
+//         }
+//             for(let k=1;k<=(2*i-1);k++){
+//                 if(k==1||k==(2*i-1)){
+//                     row+="*"
+//                 }
+//                 else{
+//                     row+=" "
+//                 }
+//             }
+
+        
+//         console.log(row)
+//     }
+// }
+// pattern(num)
+
+// find intersation  //
+
+// let arr1 = [1,2,3];
+// let arr2 = [2,3,4];
+
+// let intersaction = arr1.filter((value)=> arr2.includes(value))
+// console.log(intersaction);
+
+
+// how to marge two arrays without duplicates //
+// let arr1 = [1,2,3];
+// let arr2 = [2,3,4,5];
+
+// let newUniqueArr =[ ...new Set([... arr1, ...arr2])];
+// console.log(newUniqueArr);
+
+// let arr =[1,2,3,4,5,6,7,8,9,10];
+
+// function subArrar(arr,size){
+//     let newArr=[];
+//     for(let i=0;i<=arr.length-size;i++){
+//         newArr.push(arr.slice(i,i+size)) 
+//     }
+//     return newArr;
+// }
+// console.log(subArrar(arr,2))
+
+// function subArrar(arr,size){
+//     let newArr=[];
+//     for(let i=0;i<arr.length;i+= size){
+//         newArr.push(arr.slice(i,i+size))
+        
+//     }
+//     return newArr;
+// }
+//  let res = subArrar([1,2,3,4,5,6,7,8,9,10],3)
+//  console.log(res)
+
+// function subArrar(arr,size){
+//     let newArr=[];
+//     for(let i=0;i<arr.length;i+= size){
+//         newArr.push(arr.slice(i,i+size))
+        
+//     }
+//     return newArr;
+// }
+//  let res = subArrar([[1,2,3],[1,[2,3]],[4,3,2]])
+//  console.log(res.flat(2))
+
+// let arr = [1,2,5,7,3,4,10,8];
+
+// let sumed = arr.sort((a,b)=>a-b). filter((value)=> value>4).map((val)=>val*3)
+// console.log(sumed)
+
+
+
+let num =5;
+function NanduBhai(num){
+    for(let i=1;i<=num;i++){
+        let row=""//empty string
+        for(let j=1;j<=num;j++){
+            row+=" "
+        }
+        for(let k=1;k<=2*i-1;k++){
+            if(k==1||k==2*i-1||i==num){
+                row+="*"
+            }
+            else{
+                row+=" "
+            }
+        }
+        console.log(row);
+    }
+
+
+}
+NanduBhai(num) 
+
+
+
+
+
+
+
+
